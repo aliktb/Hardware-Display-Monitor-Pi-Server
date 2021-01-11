@@ -18,7 +18,7 @@ This is the set of python scripts that runs on the Pi. For the windows client se
 ### Usage
 
 1. Download a fresh copy of Raspbian and install to micro SD (any Pi) or USB (only works on Pi 4)
-2. Configure static IP as `190.160.1.5` (not like the common subnet of 192.168.xxx.xxx)
+2. Configure static IP as `190.160.1.5` (not like the common network prefix of 192.168.xxx.xxx)
 3. Place python files in a new directory in the user's home directory eg. Documents, Downloads etc.
 4. Append the following line at the end of the file:
     `@/usr/bin/python3 /home/USER/DIRECTORY_OF_PYTHON_FILES/main.py`
