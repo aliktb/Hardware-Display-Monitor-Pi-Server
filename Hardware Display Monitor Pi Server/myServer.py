@@ -20,35 +20,33 @@ print("Server started at " + IP + " on port " + str(Port))
 (clientsocket, address) = listensocket.accept()
 print("New connection made!")
 
-
-    
+#decodes incoming message and places values in mylist
 def tcp_in():
-    
+
     global mylist
 
     while True:
 
         try:
-        
+
             message = clientsocket.recv(1024).decode() #Gets the incomming message
-            
+
             #while (message.strip()) != "[":
             #    pass
-            
+
             mylist = message.split(",")
 
-            
-            
+
+
         except:
     #  print(message)
             pass
-        
+
         time.sleep(0.1)
-    #threading.Timer(0.1, tcp_in).start()
-   # return message
+
 
 t = threading.Thread(target =tcp_in)
-t.start() 
+t.start()
 
 def cpu_load():
     global mylist
@@ -81,9 +79,3 @@ def cpu_fan():
 def rear_fan():
     global mylist
     return float(mylist[7])
-    
-    
-    
-    
-    
-    
