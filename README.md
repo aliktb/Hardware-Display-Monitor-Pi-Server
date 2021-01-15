@@ -15,7 +15,7 @@ This is the set of python scripts that runs on the Pi. For the windows client se
 4. ethernet cable and optional USB to ethernet dongle if no spare ethernet is available on PC
 
 
-### Usage
+### Installation
 
 1. Download a fresh copy of Raspbian and install to micro SD (any Pi) or USB (only works on Pi 4). Make sure to include Desktop in install. No lite versions will work as tkinter python module requires X window display server to be running.
 2. Configure static IP as `190.160.1.5` (not like the common network prefix of 192.168.xxx.xxx)
@@ -25,6 +25,12 @@ This is the set of python scripts that runs on the Pi. For the windows client se
 5. Connect Pi to PC via ethernet cable. Can be done with PC motherboard's LAN input or USB to ethernet dongle
 6. Connect monitor to Pi vid HDMI. (Currently works with resolution of 1280 x 720)
 7. Restart the Pi
+
+### Usage
+
+1. Make sure Pi is connected to PC via ethernet
+2. Turn on Pi
+3. Use PC client to connect to PC
 
 ### Credits
 
