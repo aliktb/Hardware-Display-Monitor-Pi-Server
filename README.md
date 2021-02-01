@@ -4,7 +4,7 @@ Read CPU and GPU temperature readings from a Windows PC, then display them as a 
 
 This is the set of python scripts that runs on the Pi. For the windows client see this repository: https://github.com/aliktb/Hardware-Monitor-Display-PC-Client
 
-
+![screenshot](screenshot.png)
 -----
 
 ### Requirements
